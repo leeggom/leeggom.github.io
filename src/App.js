@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Headers />
-      <Main name="호두자두" color="pink" maleYn />
+      <Main name="mains" color="pink" maleYn />
       <Footer />
     </div>
   );

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Main({name,color, maleYn}){
-    const msg = maleYn ? '바나나':'옥수수';
+    const msg = maleYn ? 'main':'main_content';
     return (
         <div>
-            <h1 style={{color}}>hello {name}. {msg}</h1>
+            <h2 style={{color}}> reactProps {name}. {msg}</h2>
         </div>
     )
 }

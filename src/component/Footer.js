@@ -10,6 +10,7 @@ function Footer(props){
         </div>
     )
 }
+export default Footer;
 */
 
 import React,{Component} from "react";
@@ -19,7 +20,7 @@ class Footer extends Component {
         return(
             <div>
                 <footer>
-                    <h1>footer</h1>
+                    <h2>footer</h2>
                 </footer>
             </div>
         )

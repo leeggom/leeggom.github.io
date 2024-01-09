@@ -10,6 +10,8 @@ function Headers(props){
         </div>
     )
 }
+
+export default Headers;
 */
 
 import React,{Component} from "react";
@@ -19,7 +21,7 @@ class Header extends Component {
         return(
             <div>
                 <header>
-                    <h1>head.</h1>
+                    <h2>head.</h2>
                 </header>
             </div>
         )
