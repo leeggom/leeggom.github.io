@@ -72,7 +72,7 @@ const Main = function() {
     )
     */
 
-
+    /*
     const [cnt, setCnt] = useState(0);
     //const updateCnt = () => setCnt(cnt + 1);
     //const clearCnt = () => setCnt(0);
@@ -85,7 +85,33 @@ const Main = function() {
             </div>
         </div>
     )
+    */
 
+    //이벤트 핸들러 기본
+    /*
+    const [ myName, setMyName ] = useState("walnutPlum");
+    function changeName(){
+        setMyName(myName === "walnutPlum"?"plumWalnut":"walnutPlum");
+    }
+    return (
+        <div>
+            <h2>mains_{myName}</h2>
+            <button onClick={changeName}>button</button>
+        </div>
+    )
+    */
+
+    //이벤트 핸들러 함수를 직접 선언하여 사용  https://goddaehee.tistory.com/302
+    const [ myName, setMyName ] = useState("walnutPlum");
+    return (
+        <div>
+            <h2>main_{myName}</h2>
+            <button onClick={() => { 
+                setMyName(myName === "walnutPlum"?"plumWalnut":"walnutPlum");
+            }}>클릭</button>
+
+        </div>
+    )
 
 
 }

@@ -13,8 +13,6 @@ function App() {
         <Headers />
             <Wrapper>
             <Main />
-            <Main />
-            <Main />
             </Wrapper>
         <Footer />
         </div>
