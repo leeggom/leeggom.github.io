@@ -15,7 +15,7 @@ Main.prototype = {
 }
 
 Main.defaultProps = {
-    name:'디폴트'
+    name:'default'
 }
 
 export default Main;
