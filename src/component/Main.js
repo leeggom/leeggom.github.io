@@ -1,8 +1,40 @@
 import React, { useState } from 'react';
+import dummy from '../db/data.json';
 
+//--------------------------------------------------------------
+//----반복문 더미데이터 사용하기 map()  https://goddaehee.tistory.com/303
+//--------------------------------------------------------------
+const Main = (props) => {
+    return (
+        <div>
+            {
+                dummy.actors.map(people => (
+                    <h3 key={actors.}></h3>
+                ))
+            }
+        </div>
+    )
+}
+
+
+//--------------------------------------------------------------
+//----반복문 map()  https://goddaehee.tistory.com/303
+//--------------------------------------------------------------
+/*
+const Main = (props) => {
+    return (
+        <div>
+            <h3>mains_{props.name} / {props.age}</h3>
+        </div>
+    )
+}
+*/
+
+
+
+
+/*
 const Main = function() {
-
-    /*
     let myName = 'walnutPlum';
     function changeName() {
         myName = myName === "walnutPlum"?"plumNut":"walnutPlum";
@@ -47,6 +79,11 @@ const Main = function() {
     */
 
     //이거뭐야
+
+    //--------------------------------------------------------------
+    //----이벤트 핸들러 기본  https://goddaehee.tistory.com/302 Start
+    //--------------------------------------------------------------
+
     /*
     const [ state, setState ] = useState({cnt:0});
     
@@ -86,34 +123,19 @@ const Main = function() {
         </div>
     )
     */
-
-    //이벤트 핸들러 기본
+    
     /*
     const [ myName, setMyName ] = useState("walnutPlum");
-    function changeName(){
+    function changeName(e){
+        e.preventDefault();
         setMyName(myName === "walnutPlum"?"plumWalnut":"walnutPlum");
     }
     return (
         <div>
             <h2>mains_{myName}</h2>
-            <button onClick={changeName}>button</button>
+            <a href="#" onClick={changeName}>button</a>
         </div>
     )
-    */
-
-    //이벤트 핸들러 함수를 직접 선언하여 사용  https://goddaehee.tistory.com/302
-    const [ myName, setMyName ] = useState("walnutPlum");
-    return (
-        <div>
-            <h2>main_{myName}</h2>
-            <button onClick={() => { 
-                setMyName(myName === "walnutPlum"?"plumWalnut":"walnutPlum");
-            }}>클릭</button>
-
-        </div>
-    )
-
-
 }
-
+*/
 export default Main;
