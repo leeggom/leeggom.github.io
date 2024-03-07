@@ -9,7 +9,7 @@ const Main = (props) => {
         <div>
             {
                 dummy.actors.map(people => (
-                    <h3 key={actors.}></h3>
+                    <h3 key={actors.actorName}></h3>
                 ))
             }
         </div>
