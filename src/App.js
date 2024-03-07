@@ -1,20 +1,25 @@
+// App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import { Link, Route, Routes } from 'react-router-dom';
 import Home from './component/Home';
 import About from './component/About';
-
+import Profile from './component/Profile';
 
 const App = () => {
     return (
-        <Router>
+        <div>
+            <ul>
+                <li><Link to="/">home링크</Link></li>
+                <li><Link to="/About">about링크</Link></li>
+                <li><Link to="/Profile/velopert">doctor</Link></li>
+                <li><Link to="/Profile/gildong">police</Link></li>
+            </ul>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/about' element={<About />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/profile/:username" element={<Profile />} />
             </Routes>
-        </Router>
+        </div>
     );
 };
-
-
 export default App;
