@@ -1,21 +1,7 @@
-/*
-import React from "react";
-
-function Headers(props){
-    return (
-        <div>
-            <header>
-                <h1>head.</h1>
-            </header>
-        </div>
-    )
-}
-
-export default Headers;
-*/
-
 import React,{Component} from "react";
-
+import "./Header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 class Header extends Component {
     render(){
         return(

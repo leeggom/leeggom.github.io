@@ -16,7 +16,7 @@ const Main = (props) => {
     )
 }
 
-
+export default Main;
 //--------------------------------------------------------------
 //----반복문 map()  https://goddaehee.tistory.com/303
 //--------------------------------------------------------------
@@ -138,4 +138,3 @@ const Main = function() {
     )
 }
 */
-export default Main;
