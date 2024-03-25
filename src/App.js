@@ -14,8 +14,8 @@ const App = () => {
         <div>
             <Headers />
             <ul>
-                <li><Link to="/">home링크</Link></li>
-                <li><Link to="/About">about링크</Link></li>
+                <li><Link to="/">home</Link></li>
+                <li><Link to="/About">about</Link></li>
                 <li><Link to="/Profile/velopert">doctor</Link></li>
                 <li><Link to="/Profile/gildong">police</Link></li>
             </ul>
